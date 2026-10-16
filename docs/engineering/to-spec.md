@@ -25,13 +25,13 @@ Reach for it when the build is too big for one agent [session](https://www.aiher
 
 The spec exists because context windows end. You settled many things while [grilling](https://www.aihero.dev/ai-coding-dictionary/grilling): the shape of the solution, the choices you argued through, and what you deliberately refused. All of that is in one conversation that you are about to clear. The spec keeps it.
 
-So the spec does not validate or decide anything. It records what you decided, in your project's own vocabulary, so a fresh session can pick up the work without you explaining it again. If the spec states something you never said, that is a defect.
+So the spec does not validate the plan or decide the feature's behavior. It records what you decided, in your project's own vocabulary, so a fresh session can pick up the work without you explaining it again. If the spec states a product decision you never made or delegated, that is a defect.
 
 ## Seams before prose
 
-Before it writes anything, `to-spec` sketches the **seams** where the feature will be tested, and checks them with you. It prefers existing seams to new ones, and picks the highest seam it can. The ideal number of seams for a change is one.
+`to-spec` sketches the **seams** where the feature will be tested and records its choice in Testing Decisions. It prefers existing seams to new ones, and picks the highest seam it can. The ideal number of seams for a change is one. It asks you to choose only when viable seams materially differ in scope, cost, or risk and you have not delegated that choice.
 
-Other skills use those agreed seams later. [tdd](https://aihero.dev/skills-tdd) works only at seams you agreed in advance. [code-review](https://aihero.dev/skills-code-review) reviews the diff against the spec, so a seam nobody agreed to shows up as a review finding. Both connections go through this document. That is why you should take the seam conversation seriously here, and not leave it for implementation.
+Other skills use the recorded seams later. [tdd](https://aihero.dev/skills-tdd) confirms them with you before writing tests. [code-review](https://aihero.dev/skills-code-review) reviews the diff against the spec, so a seam missing from the spec shows up as a review finding. Both connections go through this document. Read Testing Decisions before implementation if the chosen seam matters to you.
 
 ## Common questions
 
@@ -65,9 +65,9 @@ A tracker issue may not return a very large spec in full, and there is no local 
 ## It's working if
 
 - It starts writing instead of asking you a new round of questions.
-- It shows you the seams before it writes, and proposes as few as it can.
+- It records as few seams as it can in Testing Decisions.
 - It uses your project's nouns, not generic product-management boilerplate.
-- You remember making every decision in it. It invented nothing to fill a section.
+- You remember making or delegating every decision in it. It invented nothing to fill a section.
 - The out-of-scope section lists real things. The things you refused are usually the most useful lines on the page.
 
 ## Where it fits
