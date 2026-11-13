@@ -35,6 +35,9 @@ Those agreed seams then travel. [tdd](https://aihero.dev/skills-tdd) works only 
 
 ## Common questions
 
+**The issue is ready to record, but its start date is not decided.**
+GitHub issue bodies include a Schedule section with From, To and estimated effort in person-days. Leave both dates blank while priority triage is pending, or fill only To when only the deadline is known. Include effort whenever possible, counting the person's confirmation, review, design and production attendance time. AI editing, generation and test execution do not count. Japanese issues use `予定`, `着手` and `予定工数` for the heading and fields.
+
 **Where did `/to-prd` go?**
 It is this skill, renamed in v1.1. "Spec" is now the single through-line term, and the old `to-prd` slug is dead; reinstall under the new name. The pair that replaced the old vocabulary is *spec* and *tickets*: the spec is the destination and the decisions that fix it, the [tickets](https://www.aihero.dev/ai-coding-dictionary/ticket) are the execution steps that get there. If you pivot, delete the unfinished tickets and keep the spec.
 
