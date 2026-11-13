@@ -18,7 +18,7 @@ Record the chosen seam in Testing Decisions. Ask only if viable seams materially
 
 3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
 
-For a GitHub issue, include the Schedule section in its body. For non-urgent work or bug reports whose timing awaits priority triage, leave From and To blank or fill only To. Include estimated effort whenever possible, counting the person's confirmation, review, design and production attendance time, not AI editing, generation or test execution. Use `## 予定`, `着手`, `予定工数`, and `人日（本人の時間: 確認・review・設計）` in Japanese issues. Leave unknown values blank rather than inventing dates or effort.
+For GitHub issues in repositories managed by Eotel, spin-dd, shiftone-ai or CyberneticHumanity, include the Schedule section in the body. For non-urgent work or bug reports whose timing awaits priority triage, leave From and To blank or fill only To. Include estimated effort whenever possible, counting the person's confirmation, review, design and production attendance time, not AI editing, generation or test execution. Use `## 予定`, `着手`, `予定工数`, and `人日（本人の時間: 確認・review・設計）` in Japanese issues. Leave unknown values blank rather than inventing dates or effort. For external projects, follow their issue template and omit Schedule.
 
 <spec-template>
 
