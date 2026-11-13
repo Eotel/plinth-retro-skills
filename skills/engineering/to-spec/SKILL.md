@@ -14,11 +14,18 @@ The issue tracker and triage label vocabulary should have been provided to you. 
 
 2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better - the ideal number is one.
 
-Check with the user that these seams match their expectations.
+Record the chosen seam in Testing Decisions. Ask only if viable seams materially differ in scope, cost, or risk and the user has not delegated the choice; otherwise publish.
 
 3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
 
+For a GitHub issue, include the Schedule section in its body. For non-urgent work or bug reports whose timing awaits priority triage, leave From and To blank or fill only To. Include estimated effort whenever possible, counting the person's confirmation, review, design and production attendance time, not AI editing, generation or test execution. Use `## 予定`, `着手`, `予定工数`, and `人日（本人の時間: 確認・review・設計）` in Japanese issues. Leave unknown values blank rather than inventing dates or effort.
+
 <spec-template>
+
+## Schedule
+
+- Start: From YYYY-MM-DD / To YYYY-MM-DD
+- Estimated effort: N person-days (the person's time: confirmation, review, design)
 
 ## Problem Statement
 
